@@ -1,0 +1,135 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul,
+li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto; /* по центру */
+}
+
+header a {
+  color: #4e110f;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  margin-top: 15px;
+}
+
+.vkladki {
+  display: flex;
+  align-items: center; /* в строчку */
+}
+.menu {
+  display: flex;
+}
+.menu li a {
+  text-transform: uppercase;
+  text-decoration: none; /* убрать подчеркивание */
+  font-size: 14px;
+}
+.menu li {
+  margin-left: 40px;
+}
+.shema {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+.btns {
+  text-decoration: none;
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  padding: 15px 47px;
+  border: 2px solid #4e110f;
+  border-radius: 15%;
+  width: 300px;
+}
+.firsttext {
+  color: #4e110f;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.firsttext p {
+  font-size: 25px;
+}
+.firsttext h1 {
+  font-size: 50px;
+  margin-top: -15px;
+}
+.btns {
+  display: flex;
+}
+.btns a {
+  text-decoration: none;
+  font-size: 30px;
+  margin: 50px;
+  margin-bottom: 200px;
+  padding: 15px;
+  border: 2px solid white;
+  border-radius: 15%;
+}
+.h111h {
+  font-size: 50px;
+  margin-top: 120px;
+  margin-bottom: 80px;
+}
+.sectext p {
+  font-size: 20px;
+  margin: 20px;
+  margin-bottom: 50px;
+  line-height: 40px;
+}
+.sectext h2 {
+  font-size: 30px;
+  margin: 20px, 0px;
+}
+#main {
+  position: relative;
+  margin: 30px auto;
+  padding: 5px;
+  width: 1150px;
+  height: 550px;
+}
+#scr {
+  margin: 20px auto;
+  width: 1160px;
+  height: 550px;
+  background-color: white;
+  background-size: cover;
+}
+.section button {
+  position: absolute;
+  top: 150px;
+  width: 25px;
+  height: 70px;
+  font-size: 40px;
+  text-align: center;
+  background: transparent;
+  border: none;
+  color: white;
+  margin-top: 110px;
+}
+.left {
+  position: absolute;
+  left: 5px;
+}
+.right {
+  right: 5px;
+}
+.theend {
+  display: flex;
+}

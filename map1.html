@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8166a8ae37429bf1551fec91e1822b6f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8166a8ae37429bf1551fec91e1822b6f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8166a8ae37429bf1551fec91e1822b6f = L.map(
+                "map_8166a8ae37429bf1551fec91e1822b6f",
+                {
+                    center: [51.1801, 71.446],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cbf4e7cb08c492686eb66cc4060e8356 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_cbf4e7cb08c492686eb66cc4060e8356.addTo(map_8166a8ae37429bf1551fec91e1822b6f);
+        
+    
+            var marker_cluster_a753016aa332bb6589ebe3611d2a01c9 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_4a4be8a210c8a4c456066e8db2d10b81 = L.marker(
+                [51.089307, 71.409837],
+                {}
+            ).addTo(marker_cluster_a753016aa332bb6589ebe3611d2a01c9);
+        
+    
+            var icon_5a67c4aee5b1ac571b0f18cb674c51dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4a4be8a210c8a4c456066e8db2d10b81.setIcon(icon_5a67c4aee5b1ac571b0f18cb674c51dc);
+        
+    
+        var popup_7faf0651c0205e7062ba4b3c66bf1358 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8543116eccbc63bb9cee6e974ea2aadd = $(`<div id="html_8543116eccbc63bb9cee6e974ea2aadd" style="width: 100.0%; height: 100.0%;">AngelInUs Удобрение: 15 кг Адрес:  Конаева 12/1 Телефон:  +7 702 485 3255</div>`)[0];
+                popup_7faf0651c0205e7062ba4b3c66bf1358.setContent(html_8543116eccbc63bb9cee6e974ea2aadd);
+            
+        
+
+        marker_4a4be8a210c8a4c456066e8db2d10b81.bindPopup(popup_7faf0651c0205e7062ba4b3c66bf1358)
+        ;
+
+        
+    
+    
+            var marker_a7926c258bba9b58329c2d1b128caeae = L.marker(
+                [51.150404, 71.457892],
+                {}
+            ).addTo(marker_cluster_a753016aa332bb6589ebe3611d2a01c9);
+        
+    
+            var icon_d98adfd3150b3223a35badfff9c2a5c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a7926c258bba9b58329c2d1b128caeae.setIcon(icon_d98adfd3150b3223a35badfff9c2a5c3);
+        
+    
+        var popup_667fd83d4c6e89b0d7111e3452c8a901 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef30307b6836b129b3302cc7abed84d7 = $(`<div id="html_ef30307b6836b129b3302cc7abed84d7" style="width: 100.0%; height: 100.0%;">CoffeBOOM Удобрение: 10 кг Адрес:  Конаева 12/1 Телефон:  +7 702 485 3255</div>`)[0];
+                popup_667fd83d4c6e89b0d7111e3452c8a901.setContent(html_ef30307b6836b129b3302cc7abed84d7);
+            
+        
+
+        marker_a7926c258bba9b58329c2d1b128caeae.bindPopup(popup_667fd83d4c6e89b0d7111e3452c8a901)
+        ;
+
+        
+    
+    
+            var marker_0c5754ad28764e8a0f8242ce96740a90 = L.marker(
+                [51.13932, 71.396472],
+                {}
+            ).addTo(marker_cluster_a753016aa332bb6589ebe3611d2a01c9);
+        
+    
+            var icon_6f169f72de685ed0c4b45d90116647a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0c5754ad28764e8a0f8242ce96740a90.setIcon(icon_6f169f72de685ed0c4b45d90116647a8);
+        
+    
+        var popup_d414c0f25a4a5944a522f0fbaa94a28c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4222fda8bcb8d448f09891b34fddd34b = $(`<div id="html_4222fda8bcb8d448f09891b34fddd34b" style="width: 100.0%; height: 100.0%;">Delish Удобрение: 7 кг Адрес:  Конаева 12/1 Телефон:  +7 702 485 3255</div>`)[0];
+                popup_d414c0f25a4a5944a522f0fbaa94a28c.setContent(html_4222fda8bcb8d448f09891b34fddd34b);
+            
+        
+
+        marker_0c5754ad28764e8a0f8242ce96740a90.bindPopup(popup_d414c0f25a4a5944a522f0fbaa94a28c)
+        ;
+
+        
+    
+    
+            var marker_0d23ada95d4e6ca3e81264faff95b12a = L.marker(
+                [51.129563, 71.42859],
+                {}
+            ).addTo(marker_cluster_a753016aa332bb6589ebe3611d2a01c9);
+        
+    
+            var icon_e08e5a78990ddd774a8fce458b7667c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0d23ada95d4e6ca3e81264faff95b12a.setIcon(icon_e08e5a78990ddd774a8fce458b7667c8);
+        
+    
+        var popup_7475c5bebb16e5e27a8660164bba65d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2175c676192ee7a007c212cfcc0efd3c = $(`<div id="html_2175c676192ee7a007c212cfcc0efd3c" style="width: 100.0%; height: 100.0%;">Koktem Удобрение: 10 кг Адрес:  Конаева 12/1 Телефон:  +7 702 485 3255</div>`)[0];
+                popup_7475c5bebb16e5e27a8660164bba65d3.setContent(html_2175c676192ee7a007c212cfcc0efd3c);
+            
+        
+
+        marker_0d23ada95d4e6ca3e81264faff95b12a.bindPopup(popup_7475c5bebb16e5e27a8660164bba65d3)
+        ;
+
+        
+    
+    
+            var marker_c1a893ce5371269bd90ddc6ffc3debc9 = L.marker(
+                [51.109563, 71.47859],
+                {}
+            ).addTo(marker_cluster_a753016aa332bb6589ebe3611d2a01c9);
+        
+    
+            var icon_e38ff57c7e8b0ca4cdd45c0908a45b72 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c1a893ce5371269bd90ddc6ffc3debc9.setIcon(icon_e38ff57c7e8b0ca4cdd45c0908a45b72);
+        
+    
+        var popup_0680c37fe83ed04fed1ff3a614340d7b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_576adcd076434e704b19b26976233028 = $(`<div id="html_576adcd076434e704b19b26976233028" style="width: 100.0%; height: 100.0%;">Luna Удобрение: 3 кг Адрес:  Конаева 12/1 Телефон:  +7 702 485 3255</div>`)[0];
+                popup_0680c37fe83ed04fed1ff3a614340d7b.setContent(html_576adcd076434e704b19b26976233028);
+            
+        
+
+        marker_c1a893ce5371269bd90ddc6ffc3debc9.bindPopup(popup_0680c37fe83ed04fed1ff3a614340d7b)
+        ;
+
+        
+    
+    
+            var marker_a235b493e0747c431f238675d06b36bd = L.marker(
+                [51.119563, 71.37159],
+                {}
+            ).addTo(marker_cluster_a753016aa332bb6589ebe3611d2a01c9);
+        
+    
+            var icon_50299b0030d5336f49c6d26fe21b90e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a235b493e0747c431f238675d06b36bd.setIcon(icon_50299b0030d5336f49c6d26fe21b90e6);
+        
+    
+        var popup_8005caf89ec344571df96e5ba103d179 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c65dd75cce66db2ed35b084eac3c5dd = $(`<div id="html_5c65dd75cce66db2ed35b084eac3c5dd" style="width: 100.0%; height: 100.0%;">Okadzaki Удобрение: 2 кг Адрес:  Конаева 12/1 Телефон:  +7 702 485 3255</div>`)[0];
+                popup_8005caf89ec344571df96e5ba103d179.setContent(html_5c65dd75cce66db2ed35b084eac3c5dd);
+            
+        
+
+        marker_a235b493e0747c431f238675d06b36bd.bindPopup(popup_8005caf89ec344571df96e5ba103d179)
+        ;
+
+        
+    
+    
+            var marker_c8c493c04a771c31d7a1c3c3270a6c17 = L.marker(
+                [51.125563, 71.40159],
+                {}
+            ).addTo(marker_cluster_a753016aa332bb6589ebe3611d2a01c9);
+        
+    
+            var icon_2cb4c2b8312d749d292bfb4e599eb015 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c8c493c04a771c31d7a1c3c3270a6c17.setIcon(icon_2cb4c2b8312d749d292bfb4e599eb015);
+        
+    
+        var popup_b1c0b1e26e2e839b7ff457855a1e4b4e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40f604006e890b5f584ea65539ff2553 = $(`<div id="html_40f604006e890b5f584ea65539ff2553" style="width: 100.0%; height: 100.0%;">Jeka'sDoner Удобрение: 18 кг Адрес:  Конаева 12/1 Телефон:  +7 702 485 3255</div>`)[0];
+                popup_b1c0b1e26e2e839b7ff457855a1e4b4e.setContent(html_40f604006e890b5f584ea65539ff2553);
+            
+        
+
+        marker_c8c493c04a771c31d7a1c3c3270a6c17.bindPopup(popup_b1c0b1e26e2e839b7ff457855a1e4b4e)
+        ;
+
+        
+    
+    
+            var marker_f6bbe484c9b385b06c2fb98aa42d1705 = L.marker(
+                [49.8019, 73.1021],
+                {}
+            ).addTo(marker_cluster_a753016aa332bb6589ebe3611d2a01c9);
+        
+    
+            var icon_962434b462af1285e425a1684c545270 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f6bbe484c9b385b06c2fb98aa42d1705.setIcon(icon_962434b462af1285e425a1684c545270);
+        
+    
+        var popup_139b2b8f74a558a03e7699d25f68f72d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5dab5251fa4fc763fceb086922393313 = $(`<div id="html_5dab5251fa4fc763fceb086922393313" style="width: 100.0%; height: 100.0%;">AngelInUs Удобрение: 15 кг Адрес:  Конаева 12/1 Телефон:  +7 702 485 3255</div>`)[0];
+                popup_139b2b8f74a558a03e7699d25f68f72d.setContent(html_5dab5251fa4fc763fceb086922393313);
+            
+        
+
+        marker_f6bbe484c9b385b06c2fb98aa42d1705.bindPopup(popup_139b2b8f74a558a03e7699d25f68f72d)
+        ;
+
+        
+    
+    
+            var marker_f7f68b5087cef5942c549f7d2deaa9f5 = L.marker(
+                [49.8019, 73.1021],
+                {}
+            ).addTo(marker_cluster_a753016aa332bb6589ebe3611d2a01c9);
+        
+    
+            var icon_fa0db607664450878146453abe5331d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f7f68b5087cef5942c549f7d2deaa9f5.setIcon(icon_fa0db607664450878146453abe5331d0);
+        
+    
+        var popup_0d3ff478ebbc737f3acfbb4cdfb4c45f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_970354a6159c7eb9e06b72cb2fc00c33 = $(`<div id="html_970354a6159c7eb9e06b72cb2fc00c33" style="width: 100.0%; height: 100.0%;">CoffeBOOM Удобрение: 10 кг Адрес:  Конаева 12/1 Телефон:  +7 702 485 3255</div>`)[0];
+                popup_0d3ff478ebbc737f3acfbb4cdfb4c45f.setContent(html_970354a6159c7eb9e06b72cb2fc00c33);
+            
+        
+
+        marker_f7f68b5087cef5942c549f7d2deaa9f5.bindPopup(popup_0d3ff478ebbc737f3acfbb4cdfb4c45f)
+        ;
+
+        
+    
+    
+            var marker_89f35a730844ed5b1d1b8cb3c69bdeb1 = L.marker(
+                [49.8019, 73.1021],
+                {}
+            ).addTo(marker_cluster_a753016aa332bb6589ebe3611d2a01c9);
+        
+    
+            var icon_3800e8a6fca77d8abb8c2fd26d45f214 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_89f35a730844ed5b1d1b8cb3c69bdeb1.setIcon(icon_3800e8a6fca77d8abb8c2fd26d45f214);
+        
+    
+        var popup_e8399a0f37a08d396f9ece9974fcda04 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_175d3fb33c034806558d3cc6f0ee0105 = $(`<div id="html_175d3fb33c034806558d3cc6f0ee0105" style="width: 100.0%; height: 100.0%;">Delish Удобрение: 7 кг Адрес:  Конаева 12/1 Телефон:  +7 702 485 3255</div>`)[0];
+                popup_e8399a0f37a08d396f9ece9974fcda04.setContent(html_175d3fb33c034806558d3cc6f0ee0105);
+            
+        
+
+        marker_89f35a730844ed5b1d1b8cb3c69bdeb1.bindPopup(popup_e8399a0f37a08d396f9ece9974fcda04)
+        ;
+
+        
+    
+    
+            marker_cluster_a753016aa332bb6589ebe3611d2a01c9.addTo(map_8166a8ae37429bf1551fec91e1822b6f);
+        
+</script>
+</html>
